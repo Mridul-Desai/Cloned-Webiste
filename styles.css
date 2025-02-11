@@ -10,6 +10,9 @@
 .top{
     background: rgba(0,0,0,0.2)url("assets/Title-Image.png");
     background-blend-mode: darken;
+    
+
+
       
 }
 section{
@@ -178,4 +181,51 @@ footer{
     margin-top: 25px;
     margin-left: 46px;
     align-items: center;
+}
+
+@media (max-width:768px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-bar ul,
+    .menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .title .name h1{
+        font-size: 40px;
+    }
+    .name-buttons{
+        flex-direction: column;
+    }
+    .images{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .images img{
+        width: 100px;
+    }
+    .bottom{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width:480px) {
+    .logo{
+        width:80px;
+    }
+    nav ul li{
+        font-size: 12px;
+
+    }   
+    .title .name h1{
+        font-size: 30px;
+
+
+    } 
+    .images img{
+        width: 80px;
+    }
 }
